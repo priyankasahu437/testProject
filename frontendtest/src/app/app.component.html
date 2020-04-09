@@ -1,0 +1,41 @@
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="table-bordered table-responsive text-center">
+<table class="table table-bordered" style="border: 1px solid #ddd !important;">
+      <thead>
+        <tr>
+          <th>Resp Id</th>
+          <th>State Id</th>
+          <th>State Name</th>
+          <th>City Id</th>
+          <th>City Name</th>
+          <th>Country Id</th>
+          <th>Country Name</th>
+          <th>File Url</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tabData of tableData">
+          <td>{{tabData.respId}}</td>
+          <td>{{tabData.state_id}}</td>
+          <td>{{tabData.state_name}}</td>
+          <td>{{tabData.city_id}}</td>
+          <td>{{tabData.city_name}}</td>
+          <td>{{tabData.county_id}}</td>
+          <td>{{tabData.country_name}}</td>
+          <td>{{tabData.file_url}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<router-outlet></router-outlet>
